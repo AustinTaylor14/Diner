@@ -1,0 +1,199 @@
+
+
+// General Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $color-background;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: $color-primary;
+  color: white;
+  img {
+    height: auto;
+    width: 50px;
+    margin-right: 10px;
+  }
+  span {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+nav {
+  background-color: black;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    flex-direction: column;
+    background-color: black;
+    li {
+      margin: 0 15px;
+      cursor: pointer;
+
+      
+      
+      
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: red;
+        padding: 10px;
+      }
+    }
+    .active {
+        background-color: white;
+      }
+      .active a {
+        color: black;
+      }
+
+  }
+}
+
+#myButton::before {
+  content: "\2630";
+}
+
+#myButton {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  font-weight: $lightWeight;
+  cursor: pointer;
+}
+
+ul.menuLinks {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  li a {
+    color: #fff;
+    display: block;
+    padding: .75rem $gutter;
+    text-decoration: none;
+  }
+}
+
+li.active a {
+  background-color: $color-primary;
+}
+
+ul.open.menuLinks {
+  display: block;
+}
+#myButton.open::before {
+  content: "x";
+}
+
+main {
+  padding: 40px;
+  section.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: $card-shadow;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid $color-secondary;
+      }
+      h2 {
+        font-size: 1.5rem;
+        color: $color-primary;
+        margin: 15px 0;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+      a {
+        display: inline-block;
+        background: $color-primary;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: 600;
+        &:hover {
+          background: darken($color-primary, 10%);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: $color-secondary;
+  color: white;
+  font-size: 0.9rem;
+  section {
+    text-align: center;
+    i.icon {
+      margin-right: 5px;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  section.contact  {
+    p{font-size: 1.2rem; margin:  .5rem;}
+    ion-icon{color:  red; padding-right: 5px;}
+}
+
+section.social {
+  display: flex;
+  justify-content: center;
+  a { 
+    display: block;
+    border: solid 1px #666;
+    font-size: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+    color: red;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+section.location {
+  font-size: 1.5rem;
+}
+}
