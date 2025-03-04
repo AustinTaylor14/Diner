@@ -108,9 +108,9 @@ ul.open.menuLinks {
 main {
   padding: 40px;
   section.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // gap: 20px;
     .card {
       background: white;
       border-radius: 8px;
@@ -126,6 +126,7 @@ main {
       img {
         width: 100%;
         height: auto;
+        display: block;
         border-bottom: 1px solid $color-secondary;
       }
       h2 {

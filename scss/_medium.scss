@@ -10,8 +10,12 @@
   
     main {
       padding: 40px 60px;
+      section.menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
     }
-  
+    }
     header {
       padding: 20px 80px;
     }
@@ -20,6 +24,7 @@
       justify-content: space-around;
     }
   
+
     main {
       padding: 40px 100px;
     }

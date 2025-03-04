@@ -402,11 +402,6 @@ ul.open.menuLinks {
 main {
   padding: 40px;
 }
-main section.menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
 main section.menu .card {
   background: white;
   border-radius: 8px;
@@ -423,6 +418,7 @@ main section.menu .card:hover {
 main section.menu .card img {
   width: 100%;
   height: auto;
+  display: block;
   border-bottom: 1px solid #222222;
 }
 main section.menu .card h2 {
@@ -510,6 +506,11 @@ p.legal {
   }
   main {
     padding: 40px 60px;
+  }
+  main section.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
   header {
     padding: 20px 80px;
